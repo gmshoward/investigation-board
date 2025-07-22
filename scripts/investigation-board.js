@@ -444,7 +444,8 @@ async function createNote(noteType) {
 
 
 Hooks.on("getSceneControlButtons", (controls) => {
-  const journalControls = controls.find((c) => c.name === "notes");
+  //const journalControls = controls.find((c) => c.name === "notes");
+  const journalControls = controls[c]
   if (!journalControls) return;
 
   journalControls.tools.push(
